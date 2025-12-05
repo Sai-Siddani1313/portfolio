@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAKSHMI VEERABHADRA SAI SIDDHANI - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background-color: #0a74da; color: #fff; padding: 3rem 1rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { margin: 0.5rem 0; font-size: 1rem; }
+    header a { color: #fff; text-decoration: none; }
+    nav { background: #fff; padding: 1rem; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+    nav a { margin: 0 1rem; color: #0a74da; text-decoration: none; font-weight: 500; }
+    section { padding: 3rem 1rem; max-width: 900px; margin: auto; }
+    h2 { color: #0a74da; border-bottom: 2px solid #0a74da; display: inline-block; padding-bottom: 0.3rem; margin-bottom: 1.5rem; }
+    ul { list-style-type: none; padding-left: 0; }
+    ul li { margin-bottom: 0.7rem; }
+    .experience h3 { margin-bottom: 0.2rem; color: #333; }
+    .experience p { margin: 0.2rem 0 0.8rem 0; font-weight: 500; }
+    .skills-label { margin-bottom: 0.3rem; font-weight: 500; }
+    .skill-bar { background: #ddd; border-radius: 4px; overflow: hidden; margin-bottom: 0.7rem; }
+    .skill-fill { height: 10px; background: #0a74da; width: 0%; transition: width 2s ease-in-out; }
+    .certifications li, .achievements li, .education li, .languages li, .interests li { padding-left: 1.2rem; position: relative; }
+    .certifications li::before, .achievements li::before, .education li::before, .languages li::before, .interests li::before { content: '\2022'; position: absolute; left: 0; color: #0a74da; }
+    footer { text-align: center; padding: 2rem; background: #0a74da; color: #fff; margin-top: 2rem; }
+    a.button { display: inline-block; background: #0a74da; color: #fff; padding: 0.7rem 1.5rem; border-radius: 5px; margin-top: 1rem; text-decoration: none; font-weight: 500; }
+    .projects-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+    .project-card { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; opacity: 0; transform: translateY(30px); }
+    .project-card.visible { opacity: 1; transform: translateY(0); }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+    .project-card h4 { margin-top: 0; color: #0a74da; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LAKSHMI VEERABHADRA SAI SIDDHANI</h1>
+  <p>Software Engineer | Kaikaluru, India</p>
+  <p><a href="mailto:veerabhadra.siddani@gmail.com">veerabhadra.siddani@gmail.com</a> | 79895 04386</p>
+  <p><a href="https://github.com/Sai-Siddani1313" target="_blank">GitHub Profile</a></p>
+  <a href="resume.pdf" class="button" download>Download Resume</a>
+</header>
+
+<nav>
+  <a href="#summary">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="summary">
+  <h2>Professional Summary</h2>
+  <p>Detail-oriented Software Engineer with 4.5 years of experience in production support, cloud operations, application monitoring, and SRE practices. Adept at managing critical incidents, troubleshooting complex issues, and ensuring stable system performance across enterprise environments. Experienced in Azure cloud, API validation, Postman, monitoring dashboards, and L1/L2 operational excellence. Committed to continuous improvement, automation, and high availability.</p>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <ul>
+    <li>Pat on Back – twice for outstanding contributions during high-impact production events.</li>
+    <li>Best Team Award – for collaboration and strong cross-team support.</li>
+  </ul>
+</section>
+
+<section id="experience" class="experience">
+  <h2>Experience</h2>
+  <h3>Honeywell International | Software Engineer</h3>
+  <p><strong>March 2025 – Present | L1/L2 Support & SRE Operations</strong></p>
+  <ul>
+    <li>Managing L1/L2 daily operations including incident triage, log analysis, real-time monitoring, and escalation handling.</li>
+    <li>Troubleshooting gateway failures, dashboard inaccuracies, API issues, and network connectivity problems.</li>
+    <li>Performing API validation using Postman for response accuracy, performance, and endpoint validation.</li>
+    <li>Conducting sanity and smoke testing during deployment, promotion activities, cutovers, and hotfix releases.</li>
+    <li>Supporting migration activities including pre-checks, cutover support, and post-deployment validation.</li>
+    <li>Leading incident, defect, and change workflows using JIRA and Zendesk.</li>
+    <li>Contributing to SRE initiatives including RCA drafting, availability checks, and performance tracking.</li>
+    <li>Preparing SOPs, runbooks, deployment checklists, and maintenance documentation.</li>
+  </ul>
+
+  <h3>Tech Mahindra | Software Engineer</h3>
+  <p><strong>June 2021 – December 2024 | L1/L2 Operations & Cloud Support (Nestlé E-commerce)</strong></p>
+  <ul>
+    <li>Delivered L1/L2 production/application support including monitoring, alert response, and daily system checks.</li>
+    <li>Provided Azure support across VM operations, networking, access configuration, and deployment assistance.</li>
+    <li>Resolved outages, slowdowns, configuration issues, and cloud service interruptions.</li>
+    <li>Performed extensive log analysis, validation checks, and recovery activities for critical applications.</li>
+    <li>Collaborated with DevOps and cloud teams to optimize workflows and improve reliability.</li>
+    <li>Used Grafana, Azure Monitor, and New Relic for proactive monitoring and alert response.</li>
+  </ul>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Technical Skills</h2>
+  <div>
+    <div class="skills-label">Azure & AWS</div>
+    <div class="skill-bar"><div class="skill-fill" style="width:90%;"></div></div>
+    <div class="skills-label">Linux & Containers (Docker, Kubernetes)</div>
+    <div class="skill-bar"><div class="skill-fill" style="width:85%;"></div></div>
+    <div class="skills-label">CI/CD & Automation (Jenkins, Shell Scripting)</div>
+    <div class="skill-bar"><div class="skill-fill" style="width:80%;"></div></div>
+    <div class="skills-label">API Testing (Postman)</div>
+    <div class="skill-bar"><div class="skill-fill" style="width:85%;"></div></div>
+    <div class="skills-label">Monitoring (Grafana, New Relic, Azure Monitor)</div>
+    <div class="skill-bar"><div class="skill-fill" style="width:90%;"></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <h4>Gateway Monitoring System</h4>
+      <p>Implemented monitoring and troubleshooting for IoT gateways, ensuring real-time data flow and uptime for enterprise clients.</p>
+    </div>
+    <div class="project-card">
+      <h4>API Validation Automation</h4>
+      <p>Developed automated Postman test scripts to validate API endpoints during deployments and migrations.</p>
+    </div>
+    <div class="project-card">
+      <h4>Azure Migration Project</h4>
+      <p>Supported seamless migration of applications and services to Azure cloud, performing pre-checks, cutovers, and post-deployment validation.</p>
+    </div>
+  </div>
+</section>
+
+<section id="certifications" class="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li>Python Certification – Coursera</li>
+    <li>Linux Certification – Cisco Networking Academy</li>
+    <li>CCNA Routing & Switching – Cisco Networking Academy</li>
+    <li>Guvi Certification – DevOps Program</li>
+  </ul>
+</section>
+
+<section id="education" class="education">
+  <h2>Education</h2>
+  <ul>
+    <li>B.Tech – Computer Science & Engineering, Swarnandhra College of Engineering & Technology, CGPA: 7.73</li>
+  </ul>
+</section>
+
+<section id="languages" class="languages">
+  <h2>Languages</h2>
+  <ul>
+    <li>English (Professional Proficiency)</li>
+    <li>Telugu (Professional Proficiency)</li>
+  </ul>
+</section>
+
+<section id="interests" class="interests">
+  <h2>Interests</h2>
+  <ul>
+    <li>Music</li>
+    <li>Gaming</li>
+  </ul>
+</section>
+
+<footer id="contact">
+  <p>Contact Me: <a href="mailto:veerabhadra.siddani@gmail.com">veerabhadra.siddani@gmail.com</a> | 79895 04386</p>
+  <p>&copy; 2025 LAKSHMI VEERABHADRA SAI SIDDHANI</p>
+</footer>
+
+<script>
+  // Animate skill bars
+  window.addEventListener('scroll', () => {
+    const skillFills = document.querySelectorAll('.skill-fill');
+    skillFills.forEach(fill => {
+      const rect = fill.getBoundingClientRect();
+      if(rect.top < window.innerHeight) {
+        fill.style.width = fill.style.width;
+      }
+    });
+
+    // Animate project cards
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if(rect.top < window.innerHeight - 50) {
+        card.classList.add('visible');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
